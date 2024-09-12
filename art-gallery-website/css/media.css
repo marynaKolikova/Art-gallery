@@ -1,0 +1,167 @@
+@import url(style.css);
+
+@media screen and (min-width: 45rem) {
+    .header {
+        max-width: 900px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .intro {
+        gap: 45px;
+    }
+
+    .header picture {
+        width: 60%;
+    }
+
+    .header article {
+        position: absolute;
+        width: 42%;
+        min-width: 330px;
+        top: 21%;
+        right: 7%;
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .collections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1.28fr 1fr 1fr;
+        gap: 11px;
+        padding: 0 40px;
+        max-width: 1110px;
+    }
+
+    .cover {
+        grid-column: span 2;
+        flex-direction: row-reverse;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .cover article {
+        gap: 24px;
+        max-width: 280px;
+        padding: 36px 57px 67px 0;
+    }
+
+    .one-picture {
+        grid-row: span 2;
+    }
+
+    picture {
+        margin: 0;
+    }
+
+    footer {
+        padding: 56px 40px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 4.375rem;
+    }
+
+    .button-right {
+        left: 39px;
+    }
+
+    .our-location {
+        display: flex;
+        justify-content: space-around;
+        gap: 68px;
+    }
+
+    .our-location p {
+        max-width: 500px;
+    }
+
+    .our-location h1 {
+        max-width: 230px;
+    }
+}
+
+@media screen and (min-width: 86rem) {
+    .black-box {
+        background-color: var(--dark-black);
+        display: inline-block;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: row;
+        max-width: 1440px;
+        gap: 0;
+
+    }
+
+    .header picture {
+        max-width: 540px;
+    }
+
+    h1 {
+        color: var(--white);
+        font-size: 6rem;
+        position: absolute;
+        max-width: 514px;
+        top: -3%;
+        left: -130%;
+    }
+
+    .collections {
+        max-width: 1440px;
+        gap: 30px;
+        margin: 180px auto;
+        padding: 0 164px;
+        grid-template-columns: 1.43fr 1fr;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 3.75rem;
+    }
+
+    .cover article {
+        gap: 32px;
+        max-width: 475px;
+        padding: 60px 125px 60px 0;
+    }
+
+    footer {
+        padding: 80px 165px;
+    }
+
+    .header p {
+        max-width: 350px;
+    }
+
+    .header article {
+        top: 24%;
+        right: -8%;
+    }
+
+    .mainP {
+        margin-bottom: 42px;
+    }
+
+    .our-location p {
+        max-width: 600px;
+    }
+
+    .our-location h1 {
+        max-width: 350px;
+        font-size: 4.375rem;
+        line-height: 1;
+        position: static;
+    }
+}
