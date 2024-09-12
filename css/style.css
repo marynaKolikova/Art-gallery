@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+}
+
+:root {
+    --white: #ffffff;
+    --dark-black: #151515;
+    --dark-grey: #444444;
+    --gold: #D5966C;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-black);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.intro {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.75rem;
+    line-height: 0.92;
+    text-transform: uppercase;
+}
+
+.our-location h1 {
+    font-size: 3.125rem;
+    margin-bottom: 48px;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--dark-grey);
+}
+
+.button {
+    display: flex;
+    max-width: 270px;
+}
+
+.button-right {
+    position: absolute;
+    top: 0;
+}
+
+.icon-location {
+    min-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-location {
+    margin: 0;
+}
+
+.button:hover .location {
+    background-color: var(--gold);
+}
+
+.our-location {
+    background-color: var(--dark-black);
+    color: var(--white);
+    padding: 48px 16px 56px 16px;
+}
+
+.button:hover .icon {
+    background-color: var(--dark-black);
+}
+
+.location {
+    background-color: var(--dark-black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 35px 24px 32px;
+
+
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: 3.63px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.icon {
+    background-color: var(--gold);
+    transition: background-color 0.3s ease;
+}
+
+.icon img {
+    padding: 24px;
+}
+
+/* Section of collections */
+
+.collections {
+    padding: 0 16px;
+    margin: 120px auto;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 32px;
+}
+
+.cover article {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3.125rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+address h2 {
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.white-text p {
+    color: var(--white);
+}
+
+picture {
+    margin-bottom: 16px;
+}
+
+.black-article {
+    background-color: var(--dark-black);
+    color: var(--white);
+    padding: 48px 24px;
+}
+
+.black-article h2 {
+    margin-bottom: 24px;
+}
+
+.black-article p {
+    color: inherit;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-black);
+    color: var(--white);
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.ft {
+    background-color: var(--gold);
+    color: var(--dark-black);
+}
+
+.ft path {
+    fill: var(--dark-black);
+}
+
+.ft a:hover path {
+    fill: var(--white);
+}
+
+a:hover path {
+    fill: var(--gold);
+}
+
+footer p {
+    color: inherit;
+    max-width: 500px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    width: 100%;
+    max-width: 200px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+.black-box {
+    display: none;
+}
